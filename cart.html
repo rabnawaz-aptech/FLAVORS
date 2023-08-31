@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FLAVORS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="container">
+            <nav class="nav">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand logo"><img src="Images/Group 3 2.png" width="92px" height="70px" alt=""></a>
+                    <ul class="nav navbar-right">
+                        <li class="mobile-menu"><button class="btn"><i class="glyphicon glyphicon-menu-hamburger"></i></button></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav main-menu">
+                    <li class="active"><a href="index.html" class="m1">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="products.html">Cooking Sauces</a></li>
+                          <li><a href="products.html">Recipe Mixes</a></li>
+                          <li><a href="products.html">Plain Spices</a></li>
+                          <li><a href="products.html">Other Products</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="mobile-menu2"><a href="#" data-target="#Login" data-toggle="modal">Log In</a></li>
+                    <li class="mobile-menu2"><a href="#" data-target="#Signup" data-toggle="modal">Sign Up</a></li>
+                    <li class="mobile-menu2"><a href="cart.html">Cart<i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right main-menu-2">
+                    <li class="main-menu" data-target="#Login" data-toggle="modal"><a href="#">Log In</i></a></li>
+                    <li class="main-menu" data-target="#Signup" data-toggle="modal"><a href="#">Sign Up</i></a></li>
+                    <li class="main-menu"><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </div>
+
+    <div class="modal" id="Login">
+
+		<div class="modal-dialog">
+			<div class="modal-content modal-content2">
+                <div class="modal-header">
+                    <i class="close" data-target="#Login" data-toggle="modal">&times;</i>
+                    <h2 class="log-h1">Log In</h2>
+                </div>
+                <div class="modal-body">
+                    <label class="list-name">Email:</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email Address" required>
+                    <label class="list-name">Password:</label>
+                    <input type="password" required class="form-control" placeholder="Password" required>
+                    <br>
+                    <span class="login-span"><span><a href="#">Forgot Password?</a></span><span class="login-span2" data-target="#Login" data-toggle="modal"><a href="#" data-target="#Signup" data-toggle="modal">Sign Up</a></span></span>
+                    <br><br>
+                    <button class="btn my-btn">Log In</button>
+                </div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="modal" id="Signup">
+
+		<div class="modal-dialog">
+			<div class="modal-content modal-content2">
+                <div class="modal-header">
+                    <i class="close" data-target="#Signup" data-toggle="modal">&times;</i>
+                    <h2 class="log-h1">Sign Up</h2>
+                </div>
+                <div class="modal-body">
+                    <label class="list-name">First Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your First Name" required>
+                    <label class="list-name">Last Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your Last Name" required>
+                    <label class="list-name">Email:</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email Address" required>
+                    <label class="list-name">Password:</label>
+                    <input type="password" required class="form-control" placeholder="Password" required>
+                    <span class="login-span">Password must be atleast 8 characters</span>
+                    <br><br>
+                    <label class="list-name">Phone Number:</label>
+                    <input type="tel" maxlength="11" required class="form-control" placeholder="Phone Number" required>
+                    <br><br>
+                    <button class="btn my-btn">Sign Up</button>
+                </div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="container cart-cover">
+        <center><h1 class="h11">Cart</h1></center>
+    </div>
+    
+    <div class="container">
+        <br>
+        <!-- <hr class="hr"> -->
+    </div>
+    <div class="container">
+        <div class="cart-list">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <center><span class="h3">Product Name</span></center>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2 mq1">
+                    <center><span class="h3">Image</span></center>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <center><span class="h3">Qty</span></center>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <center><span class="h3">Price</span></center>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-3">
+                    <center><span class="h3">Amount</span></center>
+                </div>
+            </div>
+            <hr>
+            <div class="prod" id="prod">
+                <div class='empty-cart' id="empty-cart"><center>Your Cart is Empty</center></div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-sm-10 col-xs-12">
+                <span class="total"><h3 class="h4">Total: <span class="total1">Rs. <span id="total"></span>/-</span> </h3></span>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <button class="btn my-btn" data-target="#Checkout" data-toggle="modal">Check Out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Checkout">
+
+		<div class="modal-dialog">
+			<div class="modal-content modal-content2">
+                <div class="modal-header">
+                    <i class="close" data-target="#Checkout" data-toggle="modal">&times;</i>
+                    <h2 class="log-h1">Check Out</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label class="list-name">First Name:</label>
+                        <input type="text" id="emp" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label class="list-name">Last Name:</label>
+                        <input type="text" id="emp" class="form-control" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                        <label class="list-name">Address:</label>
+                        <input type="text" id="emp" class="form-control" placeholder="Enter Your Address" required>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label class="list-name">City:</label>
+                        <input type="text" id="emp" required class="form-control" placeholder="City" required>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label class="list-name">Zip Code:</label>
+                        <input type="text" id="emp" required class="form-control" placeholder="Zip Code" required>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label class="list-name">State:</label>
+                        <input type="text" id="emp" required class="form-control" placeholder="State" required>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label class="list-name">Country:</label>
+                        <input type="text" id="emp" required class="form-control" placeholder="Country" required>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                        <label class="list-name">Phone:</label>
+                        <input type="tel" id="emp" minlength="11" maxlength="11" required class="form-control" placeholder="Phone Number" required>
+                        </div>
+
+                    </div>
+                    <br><br>
+                    <a><button class="btn my-btn" id="cout" onclick="emp();" data-target="#Orderplaced" data-toggle="modal">Place Order</button></a>
+                </div>
+			</div>
+		</div>
+	</div>
+
+    <div class="modal modal2" id="">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-header">
+                    <i class="close" data-target="#Orderplaced" data-toggle="modal">&times;</i>
+                    <center><h2 class="log-h1">Order Placed</h2></center>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p class="list-name">Your order has been placed. You will recieve a confirmation call from our team, after confirmation your order will be delivered under 3 to 5 working days.</p>
+                        <br><br>
+                        <p class="login-span"><a href="#">Cancel Order?</a><span class="login-span2"><a href="#">Give us review</a></span></p>
+                    </div>    
+                    </div>
+                    <a href="products.html"><button class="btn my-btn" data-target="#Orderplaced" data-toggle="modal">Continue Shopping</button></a>
+                </div>
+			</div>
+		</div>
+	</div>
+    <!-- <p id="abc"></p> -->
+
+    
+    <br><br><br>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="Images/Logo.png" width="30%" alt="">
+                    <h4>FLAVORS Inc. (Pvt) Ltd.</h4>
+                    <p>The true Ambassadors of Spices.</p>
+                    <p>Saima Trade Tower، B-115, 1st Floor, I.I Chundrigar Rd, Karachi, Karachi City, Sindh.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                        <center><h3>Follow us on Social Media</h3>
+                            <a href="https://facebook.com"><img src="Images/Facebook-Logo.png" width="20%" class="icon icon1"></a>
+                            <a href="https://instagram.com"><img src="Images/Instagram-Logo.png" width="20%" class="icon icon2"></a>
+                            <a href="https://twitter.com"><img src="Images/Twitter-Logo.png" width="20%" class="icon icon3"></a><br>
+                            <h4>FLAVORS Inc.</h4>
+                        </center>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span class="footer-link">
+                        <center>
+                            <h3>Get in Touch with Us</h3>
+                            <a href="mailto:rabnawaz.aptech@gmail.com"><img src="Images/Mail-Icon.png" width="7%" alt=""><br>info@flavors.com<br><br></a>
+                            <img src="Images/Phone-Icon.png" width="7%" alt=""><br>(021) 32277221
+                        </center>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-down">
+        <center>Copyright &copy; 2023 FLAVORS Inc. All Rights Reserved</center>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $(".mobile-menu").click(function(){
+                $(".main-menu").slideToggle();
+            });
+            $(".dropdown").click(function(){
+                $(".dropdown-menu").slideToggle();
+            });
+        });
+
+        function emp(){
+
+            var emp = document.getElementById('emp').value;
+
+            if(emp==""){
+                alert("Please fill out the form!");
+            }
+            else{
+
+                $(document).ready(function(){
+                    $(".modal2").attr("id", "Orderplaced");
+                });
+            }
+        }
+
+        
+
+        if(sessionStorage.getItem("prod-1-name") || sessionStorage.getItem("prod-2-name") || sessionStorage.getItem("prod-3-name") || sessionStorage.getItem("prod-4-name") || sessionStorage.getItem("prod-5-name") || sessionStorage.getItem("prod-6-name") || sessionStorage.getItem("prod-7-name") || sessionStorage.getItem("prod-8-name") || sessionStorage.getItem("prod-9-name") || sessionStorage.getItem("prod-10-name") || sessionStorage.getItem("prod-11-name") || sessionStorage.getItem("prod-12-name") || sessionStorage.getItem("prod-13-name") || sessionStorage.getItem("prod-14-name") || sessionStorage.getItem("prod-15-name") || sessionStorage.getItem("prod-16-name") || sessionStorage.getItem("prod-17-name") || sessionStorage.getItem("prod-18-name") || sessionStorage.getItem("prod-19-name") || sessionStorage.getItem("prod-20-name") || sessionStorage.getItem("prod-21-name") || sessionStorage.getItem("prod-22-name") || sessionStorage.getItem("prod-23-name") || sessionStorage.getItem("prod-24-name") || sessionStorage.getItem("prod-25-name") || sessionStorage.getItem("prod-26-name") || sessionStorage.getItem("prod-27-name") || sessionStorage.getItem("prod-28-name") || sessionStorage.getItem("prod-29-name")){
+
+            var empty = document.getElementById('empty-cart');
+            empty.classList.toggle('empty-c');
+            
+        }
+
+        // var empt = document.getElementById("prod").innerHTML="";
+
+        // if(empt==""){
+        //     var emptycart = ("<div class='empty-cart'><center>Your Cart is Empty</center></div>");
+        //     document.getElementById('prod').innerHTML+=(emptycart);
+        // }
+        
+
+
+
+
+        var prod1name = sessionStorage.getItem("prod-1-name");
+        var prod1quantity = sessionStorage.getItem("prod-1-quantity");
+        var prod1price = sessionStorage.getItem("prod-1-price");
+        var prod1amount = prod1quantity*prod1price;
+
+        if(sessionStorage.getItem("prod-1-name") && sessionStorage.getItem("prod-1-quantity") && sessionStorage.getItem("prod-1-price")){
+            var prod1 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'><center id='prod-1-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-1-img'><img src=Images/Product1.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-1-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-1-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-1-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct1();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod1);
+            
+            document.getElementById('prod-1-name').innerHTML+=prod1name;
+            document.getElementById('prod-1-quantity').innerHTML+=prod1quantity;
+            document.getElementById('prod-1-price').innerHTML+=prod1price;
+            document.getElementById("prod-1-amount").innerHTML+=prod1amount;
+        }
+
+        function removeproduct1(){
+
+            document.getElementById('prod').innerHTML-=(prod1);
+            sessionStorage.removeItem("prod-1-name");
+            sessionStorage.removeItem("prod-1-quantity");
+            sessionStorage.removeItem("prod-1-price");
+
+            window.location.reload();
+
+
+        }
+
+
+
+        var prod2name = sessionStorage.getItem("prod-2-name");
+        var prod2quantity = sessionStorage.getItem("prod-2-quantity");
+        var prod2price = sessionStorage.getItem("prod-2-price");
+        var prod2amount = prod2quantity*prod2price;
+
+        if(sessionStorage.getItem("prod-2-name") && sessionStorage.getItem("prod-2-quantity") && sessionStorage.getItem("prod-2-price")){
+            var prod2 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-2-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-2-img'><img src=Images/Product2.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-2-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-2-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-2-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct2();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod2);
+            
+            document.getElementById('prod-2-name').innerHTML+=prod2name;
+            document.getElementById('prod-2-quantity').innerHTML+=prod2quantity;
+            document.getElementById('prod-2-price').innerHTML+=prod2price;
+            document.getElementById("prod-2-amount").innerHTML+=prod2amount;
+        }
+
+        function removeproduct2(){
+            document.getElementById('prod').innerHTML-=(prod2);
+            sessionStorage.removeItem("prod-2-name");
+            sessionStorage.removeItem("prod-2-quantity");
+            sessionStorage.removeItem("prod-2-price");
+
+            window.location.reload();
+        }
+
+
+
+        var prod3name = sessionStorage.getItem("prod-3-name");
+        var prod3quantity = sessionStorage.getItem("prod-3-quantity");
+        var prod3price = sessionStorage.getItem("prod-3-price");
+        var prod3amount = prod3quantity*prod3price;
+
+        if(sessionStorage.getItem("prod-3-name") && sessionStorage.getItem("prod-3-quantity") && sessionStorage.getItem("prod-3-price")){
+            var prod3 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-3-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-3-img'><img src=Images/Product3.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-3-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-3-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-3-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct3();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod3);
+            
+            document.getElementById('prod-3-name').innerHTML+=prod3name;
+            document.getElementById('prod-3-quantity').innerHTML+=prod3quantity;
+            document.getElementById('prod-3-price').innerHTML+=prod3price;
+            document.getElementById("prod-3-amount").innerHTML+=prod3amount;
+        }
+
+        function removeproduct3(){
+            document.getElementById('prod').innerHTML-=(prod3);
+            sessionStorage.removeItem("prod-3-name");
+            sessionStorage.removeItem("prod-3-quantity");
+            sessionStorage.removeItem("prod-3-price");
+
+            window.location.reload();
+        }
+
+
+        var prod4name = sessionStorage.getItem("prod-4-name");
+        var prod4quantity = sessionStorage.getItem("prod-4-quantity");
+        var prod4price = sessionStorage.getItem("prod-4-price");
+        var prod4amount = prod4quantity*prod4price;
+
+        if(sessionStorage.getItem("prod-4-name") && sessionStorage.getItem("prod-4-quantity") && sessionStorage.getItem("prod-4-price")){
+            var prod4 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-4-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-4-img'><img src=Images/Product4.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-4-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-4-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-4-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct4();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod4);
+            
+            document.getElementById('prod-4-name').innerHTML+=prod4name;
+            document.getElementById('prod-4-quantity').innerHTML+=prod4quantity;
+            document.getElementById('prod-4-price').innerHTML+=prod4price;
+            document.getElementById("prod-4-amount").innerHTML+=prod4amount;
+        }
+
+        function removeproduct4(){
+            if(sessionStorage.getItem("prod-4-name") && sessionStorage.getItem("prod-4-quantity") && sessionStorage.getItem("prod-4-price")){
+                document.getElementById('prod').innerHTML-=(prod4);
+                sessionStorage.removeItem("prod-4-name");
+                sessionStorage.removeItem("prod-4-quantity");
+                sessionStorage.removeItem("prod-4-price");
+
+                window.location.reload();
+
+            }
+
+        }
+
+
+        var prod5name = sessionStorage.getItem("prod-5-name");
+        var prod5quantity = sessionStorage.getItem("prod-5-quantity");
+        var prod5price = sessionStorage.getItem("prod-5-price");
+        var prod5amount = prod5quantity*prod5price;
+
+        if(sessionStorage.getItem("prod-5-name") && sessionStorage.getItem("prod-5-quantity") && sessionStorage.getItem("prod-5-price")){
+            var prod5 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-5-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-5-img'><img src=Images/Product5.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-5-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-5-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-5-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct5();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod5);
+            
+            document.getElementById('prod-5-name').innerHTML+=prod5name;
+            document.getElementById('prod-5-quantity').innerHTML+=prod5quantity;
+            document.getElementById('prod-5-price').innerHTML+=prod5price;
+            document.getElementById("prod-5-amount").innerHTML+=prod5amount;
+        }
+
+        function removeproduct5(){
+            if(sessionStorage.getItem("prod-5-name") && sessionStorage.getItem("prod-5-quantity") && sessionStorage.getItem("prod-5-price")){
+                document.getElementById('prod').innerHTML-=(prod5);
+                sessionStorage.removeItem("prod-5-name");
+                sessionStorage.removeItem("prod-5-quantity");
+                sessionStorage.removeItem("prod-5-price");
+
+                window.location.reload();
+
+            }
+
+        }
+
+        var prod6name = sessionStorage.getItem("prod-6-name");
+        var prod6quantity = sessionStorage.getItem("prod-6-quantity");
+        var prod6price = sessionStorage.getItem("prod-6-price");
+        var prod6amount = prod6quantity*prod6price;
+
+        if(sessionStorage.getItem("prod-6-name") && sessionStorage.getItem("prod-6-quantity") && sessionStorage.getItem("prod-6-price")){
+            var prod6 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-6-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-6-img'><img src=Images/Product6.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-6-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-6-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-6-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct6();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod6);
+            
+            document.getElementById('prod-6-name').innerHTML+=prod6name;
+            document.getElementById('prod-6-quantity').innerHTML+=prod6quantity;
+            document.getElementById('prod-6-price').innerHTML+=prod6price;
+            document.getElementById("prod-6-amount").innerHTML+=prod6amount;
+        }
+
+        function removeproduct6(){
+            if(sessionStorage.getItem("prod-6-name") && sessionStorage.getItem("prod-6-quantity") && sessionStorage.getItem("prod-6-price")){
+                document.getElementById('prod').innerHTML-=(prod6);
+                sessionStorage.removeItem("prod-6-name");
+                sessionStorage.removeItem("prod-6-quantity");
+                sessionStorage.removeItem("prod-6-price");
+
+                window.location.reload();
+
+            }
+
+        }
+
+
+        var prod7name = sessionStorage.getItem("prod-7-name");
+        var prod7quantity = sessionStorage.getItem("prod-7-quantity");
+        var prod7price = sessionStorage.getItem("prod-7-price");
+        var prod7amount = prod7quantity*prod7price;
+
+        if(sessionStorage.getItem("prod-7-name") && sessionStorage.getItem("prod-7-quantity") && sessionStorage.getItem("prod-7-price")){
+            var prod7 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-7-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-7-img'><img src=Images/Product7.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-7-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-7-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-7-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct7();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod7);
+            
+            document.getElementById('prod-7-name').innerHTML+=prod7name;
+            document.getElementById('prod-7-quantity').innerHTML+=prod7quantity;
+            document.getElementById('prod-7-price').innerHTML+=prod7price;
+            document.getElementById("prod-7-amount").innerHTML+=prod7amount;
+        }
+
+        function removeproduct7(){
+            if(sessionStorage.getItem("prod-7-name") && sessionStorage.getItem("prod-7-quantity") && sessionStorage.getItem("prod-7-price")){
+                document.getElementById('prod').innerHTML-=(prod7);
+                sessionStorage.removeItem("prod-7-name");
+                sessionStorage.removeItem("prod-7-quantity");
+                sessionStorage.removeItem("prod-7-price");
+
+                window.location.reload();
+
+            }
+
+        }
+
+        var prod8name = sessionStorage.getItem("prod-8-name");
+        var prod8quantity = sessionStorage.getItem("prod-8-quantity");
+        var prod8price = sessionStorage.getItem("prod-8-price");
+        var prod8amount = prod8quantity*prod8price;
+
+        if(sessionStorage.getItem("prod-8-name") && sessionStorage.getItem("prod-8-quantity") && sessionStorage.getItem("prod-8-price")){
+            var prod8 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-8-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-8-img'><img src=Images/Product8.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-8-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-8-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-8-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct8();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod8);
+            
+            document.getElementById('prod-8-name').innerHTML+=prod8name;
+            document.getElementById('prod-8-quantity').innerHTML+=prod8quantity;
+            document.getElementById('prod-8-price').innerHTML+=prod8price;
+            document.getElementById("prod-8-amount").innerHTML+=prod8amount;
+        }
+
+        function removeproduct8(){
+                document.getElementById('prod').innerHTML-=(prod8);
+                sessionStorage.removeItem("prod-8-name");
+                sessionStorage.removeItem("prod-8-quantity");
+                sessionStorage.removeItem("prod-8-price");
+
+                window.location.reload();
+
+            }
+
+        
+        var prod9name = sessionStorage.getItem("prod-9-name");
+        var prod9quantity = sessionStorage.getItem("prod-9-quantity");
+        var prod9price = sessionStorage.getItem("prod-9-price");
+        var prod9amount = prod9quantity*prod9price;
+
+        if(sessionStorage.getItem("prod-9-name") && sessionStorage.getItem("prod-9-quantity") && sessionStorage.getItem("prod-9-price")){
+            var prod9 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-9-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-9-img'><img src=Images/Product9.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-9-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-9-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-9-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct9();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod9);
+            
+            document.getElementById('prod-9-name').innerHTML+=prod9name;
+            document.getElementById('prod-9-quantity').innerHTML+=prod9quantity;
+            document.getElementById('prod-9-price').innerHTML+=prod9price;
+            document.getElementById("prod-9-amount").innerHTML+=prod9amount;
+        }
+
+        function removeproduct9(){
+                document.getElementById('prod').innerHTML-=(prod9);
+                sessionStorage.removeItem("prod-9-name");
+                sessionStorage.removeItem("prod-9-quantity");
+                sessionStorage.removeItem("prod-9-price");
+
+                window.location.reload();
+
+            }
+
+            
+        var prod10name = sessionStorage.getItem("prod-10-name");
+        var prod10quantity = sessionStorage.getItem("prod-10-quantity");
+        var prod10price = sessionStorage.getItem("prod-10-price");
+        var prod10amount = prod10quantity*prod10price;
+
+        if(sessionStorage.getItem("prod-10-name") && sessionStorage.getItem("prod-10-quantity") && sessionStorage.getItem("prod-10-price")){
+            var prod10 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-10-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-10-img'><img src=Images/Product10.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-10-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-10-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-10-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct10();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod10);
+            
+            document.getElementById('prod-10-name').innerHTML+=prod10name;
+            document.getElementById('prod-10-quantity').innerHTML+=prod10quantity;
+            document.getElementById('prod-10-price').innerHTML+=prod10price;
+            document.getElementById("prod-10-amount").innerHTML+=prod10amount;
+        }
+
+        function removeproduct10(){
+                document.getElementById('prod').innerHTML-=(prod10);
+                sessionStorage.removeItem("prod-10-name");
+                sessionStorage.removeItem("prod-10-quantity");
+                sessionStorage.removeItem("prod-10-price");
+
+                window.location.reload();
+
+            }
+
+        
+        var prod11name = sessionStorage.getItem("prod-11-name");
+        var prod11quantity = sessionStorage.getItem("prod-11-quantity");
+        var prod11price = sessionStorage.getItem("prod-11-price");
+        var prod11amount = prod11quantity*prod11price;
+        
+        if(sessionStorage.getItem("prod-11-name") && sessionStorage.getItem("prod-11-quantity") && sessionStorage.getItem("prod-11-price")){
+            var prod11 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-11-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-11-img'><img src=Images/Product11.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-11-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-11-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-11-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct11();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod11);
+            
+            document.getElementById('prod-11-name').innerHTML+=prod11name;
+            document.getElementById('prod-11-quantity').innerHTML+=prod11quantity;
+            document.getElementById('prod-11-price').innerHTML+=prod11price;
+            document.getElementById("prod-11-amount").innerHTML+=prod11amount;
+        }
+
+        function removeproduct11(){
+                document.getElementById('prod').innerHTML-=(prod11);
+                sessionStorage.removeItem("prod-11-name");
+                sessionStorage.removeItem("prod-11-quantity");
+                sessionStorage.removeItem("prod-11-price");
+
+                window.location.reload();
+
+            }
+    
+        var prod12name = sessionStorage.getItem("prod-12-name");
+        var prod12quantity = sessionStorage.getItem("prod-12-quantity");
+        var prod12price = sessionStorage.getItem("prod-12-price");
+        var prod12amount = prod12quantity*prod12price;
+
+        if(sessionStorage.getItem("prod-12-name") && sessionStorage.getItem("prod-12-quantity") && sessionStorage.getItem("prod-12-price")){
+            var prod12 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-12-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-12-img'><img src=Images/Product12.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-12-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-12-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-12-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct12();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod12);
+            
+            document.getElementById('prod-12-name').innerHTML+=prod12name;
+            document.getElementById('prod-12-quantity').innerHTML+=prod12quantity;
+            document.getElementById('prod-12-price').innerHTML+=prod12price;
+            document.getElementById("prod-12-amount").innerHTML+=prod12amount;
+        }
+
+        function removeproduct12(){
+                document.getElementById('prod').innerHTML-=(prod12);
+                sessionStorage.removeItem("prod-12-name");
+                sessionStorage.removeItem("prod-12-quantity");
+                sessionStorage.removeItem("prod-12-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod13name = sessionStorage.getItem("prod-13-name");
+        var prod13quantity = sessionStorage.getItem("prod-13-quantity");
+        var prod13price = sessionStorage.getItem("prod-13-price");
+        var prod13amount = prod13quantity*prod13price;
+
+        if(sessionStorage.getItem("prod-13-name") && sessionStorage.getItem("prod-13-quantity") && sessionStorage.getItem("prod-13-price")){
+            var prod13 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-13-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-13-img'><img src=Images/Product13.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-13-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-13-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-13-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct13();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod13);
+            
+            document.getElementById('prod-13-name').innerHTML+=prod13name;
+            document.getElementById('prod-13-quantity').innerHTML+=prod13quantity;
+            document.getElementById('prod-13-price').innerHTML+=prod13price;
+            document.getElementById("prod-13-amount").innerHTML+=prod13amount;
+        }
+
+        function removeproduct13(){
+                document.getElementById('prod').innerHTML-=(prod13);
+                sessionStorage.removeItem("prod-13-name");
+                sessionStorage.removeItem("prod-13-quantity");
+                sessionStorage.removeItem("prod-13-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod14name = sessionStorage.getItem("prod-14-name");
+        var prod14quantity = sessionStorage.getItem("prod-14-quantity");
+        var prod14price = sessionStorage.getItem("prod-14-price");
+        var prod14amount = prod14quantity*prod14price;
+
+        if(sessionStorage.getItem("prod-14-name") && sessionStorage.getItem("prod-14-quantity") && sessionStorage.getItem("prod-14-price")){
+            var prod14 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-14-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-14-img'><img src=Images/Product14.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-14-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-14-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-14-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct14();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod14);
+            
+            document.getElementById('prod-14-name').innerHTML+=prod14name;
+            document.getElementById('prod-14-quantity').innerHTML+=prod14quantity;
+            document.getElementById('prod-14-price').innerHTML+=prod14price;
+            document.getElementById("prod-14-amount").innerHTML+=prod14amount;
+        }
+
+        function removeproduct14(){
+                document.getElementById('prod').innerHTML-=(prod14);
+                sessionStorage.removeItem("prod-14-name");
+                sessionStorage.removeItem("prod-14-quantity");
+                sessionStorage.removeItem("prod-14-price");
+
+                window.location.reload();
+
+            }
+
+        var prod15name = sessionStorage.getItem("prod-15-name");
+        var prod15quantity = sessionStorage.getItem("prod-15-quantity");
+        var prod15price = sessionStorage.getItem("prod-15-price");
+        var prod15amount = prod15quantity*prod15price;
+
+        if(sessionStorage.getItem("prod-15-name") && sessionStorage.getItem("prod-15-quantity") && sessionStorage.getItem("prod-15-price")){
+            var prod15 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-15-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-15-img'><img src=Images/Product15.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-15-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-15-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-15-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct15();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod15);
+            
+            document.getElementById('prod-15-name').innerHTML+=prod15name;
+            document.getElementById('prod-15-quantity').innerHTML+=prod15quantity;
+            document.getElementById('prod-15-price').innerHTML+=prod15price;
+            document.getElementById("prod-15-amount").innerHTML+=prod15amount;
+        }
+
+        function removeproduct15(){
+                document.getElementById('prod').innerHTML-=(prod15);
+                sessionStorage.removeItem("prod-15-name");
+                sessionStorage.removeItem("prod-15-quantity");
+                sessionStorage.removeItem("prod-15-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod16name = sessionStorage.getItem("prod-16-name");
+        var prod16quantity = sessionStorage.getItem("prod-16-quantity");
+        var prod16price = sessionStorage.getItem("prod-16-price");
+        var prod16amount = prod16quantity*prod16price;
+
+        if(sessionStorage.getItem("prod-16-name") && sessionStorage.getItem("prod-16-quantity") && sessionStorage.getItem("prod-16-price")){
+            var prod16 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-16-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-16-img'><img src=Images/Product16.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-16-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-16-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-16-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct16();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod16);
+            
+            document.getElementById('prod-16-name').innerHTML+=prod16name;
+            document.getElementById('prod-16-quantity').innerHTML+=prod16quantity;
+            document.getElementById('prod-16-price').innerHTML+=prod16price;
+            document.getElementById("prod-16-amount").innerHTML+=prod16amount;
+        }
+
+        function removeproduct16(){
+                document.getElementById('prod').innerHTML-=(prod16);
+                sessionStorage.removeItem("prod-16-name");
+                sessionStorage.removeItem("prod-16-quantity");
+                sessionStorage.removeItem("prod-16-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod17name = sessionStorage.getItem("prod-17-name");
+        var prod17quantity = sessionStorage.getItem("prod-17-quantity");
+        var prod17price = sessionStorage.getItem("prod-17-price");
+        var prod17amount = prod17quantity*prod17price;
+
+        if(sessionStorage.getItem("prod-17-name") && sessionStorage.getItem("prod-17-quantity") && sessionStorage.getItem("prod-17-price")){
+            var prod17 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-17-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-17-img'><img src=Images/Product17.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-17-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-17-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-17-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct17();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod17);
+            
+            document.getElementById('prod-17-name').innerHTML+=prod17name;
+            document.getElementById('prod-17-quantity').innerHTML+=prod17quantity;
+            document.getElementById('prod-17-price').innerHTML+=prod17price;
+            document.getElementById("prod-17-amount").innerHTML+=prod17amount;
+        }
+
+        function removeproduct17(){
+                document.getElementById('prod').innerHTML-=(prod17);
+                sessionStorage.removeItem("prod-17-name");
+                sessionStorage.removeItem("prod-17-quantity");
+                sessionStorage.removeItem("prod-17-price");
+
+                window.location.reload();
+
+            }
+
+        var prod18name = sessionStorage.getItem("prod-18-name");
+        var prod18quantity = sessionStorage.getItem("prod-18-quantity");
+        var prod18price = sessionStorage.getItem("prod-18-price");
+        var prod18amount = prod18quantity*prod18price;
+
+        if(sessionStorage.getItem("prod-18-name") && sessionStorage.getItem("prod-18-quantity") && sessionStorage.getItem("prod-18-price")){
+            var prod18 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-18-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-18-img'><img src=Images/Product18.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-18-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-18-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-18-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct18();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod18);
+            
+            document.getElementById('prod-18-name').innerHTML+=prod18name;
+            document.getElementById('prod-18-quantity').innerHTML+=prod18quantity;
+            document.getElementById('prod-18-price').innerHTML+=prod18price;
+            document.getElementById("prod-18-amount").innerHTML+=prod18amount;
+        }
+
+        function removeproduct18(){
+                document.getElementById('prod').innerHTML-=(prod18);
+                sessionStorage.removeItem("prod-18-name");
+                sessionStorage.removeItem("prod-18-quantity");
+                sessionStorage.removeItem("prod-18-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod19name = sessionStorage.getItem("prod-19-name");
+        var prod19quantity = sessionStorage.getItem("prod-19-quantity");
+        var prod19price = sessionStorage.getItem("prod-19-price");
+        var prod19amount = prod19quantity*prod19price;
+
+        if(sessionStorage.getItem("prod-19-name") && sessionStorage.getItem("prod-19-quantity") && sessionStorage.getItem("prod-19-price")){
+            var prod19 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-19-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-19-img'><img src=Images/Product19.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-19-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-19-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-19-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct19();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod19);
+            
+            document.getElementById('prod-19-name').innerHTML+=prod19name;
+            document.getElementById('prod-19-quantity').innerHTML+=prod19quantity;
+            document.getElementById('prod-19-price').innerHTML+=prod19price;
+            document.getElementById("prod-19-amount").innerHTML+=prod19amount;
+        }
+
+        function removeproduct19(){
+                document.getElementById('prod').innerHTML-=(prod19);
+                sessionStorage.removeItem("prod-19-name");
+                sessionStorage.removeItem("prod-19-quantity");
+                sessionStorage.removeItem("prod-19-price");
+
+                window.location.reload();
+
+            }
+
+        var prod20name = sessionStorage.getItem("prod-20-name");
+        var prod20quantity = sessionStorage.getItem("prod-20-quantity");
+        var prod20price = sessionStorage.getItem("prod-20-price");
+        var prod20amount = prod20quantity*prod20price;
+
+        if(sessionStorage.getItem("prod-20-name") && sessionStorage.getItem("prod-20-quantity") && sessionStorage.getItem("prod-20-price")){
+            var prod20 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-20-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-20-img'><img src=Images/Product20.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-20-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-20-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-20-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct20();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod20);
+            
+            document.getElementById('prod-20-name').innerHTML+=prod20name;
+            document.getElementById('prod-20-quantity').innerHTML+=prod20quantity;
+            document.getElementById('prod-20-price').innerHTML+=prod20price;
+            document.getElementById("prod-20-amount").innerHTML+=prod20amount;
+        }
+
+        function removeproduct20(){
+                document.getElementById('prod').innerHTML-=(prod20);
+                sessionStorage.removeItem("prod-20-name");
+                sessionStorage.removeItem("prod-20-quantity");
+                sessionStorage.removeItem("prod-20-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod21name = sessionStorage.getItem("prod-21-name");
+        var prod21quantity = sessionStorage.getItem("prod-21-quantity");
+        var prod21price = sessionStorage.getItem("prod-21-price");
+        var prod21amount = prod21quantity*prod21price;
+
+        if(sessionStorage.getItem("prod-21-name") && sessionStorage.getItem("prod-21-quantity") && sessionStorage.getItem("prod-21-price")){
+            var prod21 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-21-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-21-img'><img src=Images/Product21.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-21-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-21-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-21-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct21();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod21);
+            
+            document.getElementById('prod-21-name').innerHTML+=prod21name;
+            document.getElementById('prod-21-quantity').innerHTML+=prod21quantity;
+            document.getElementById('prod-21-price').innerHTML+=prod21price;
+            document.getElementById("prod-21-amount").innerHTML+=prod21amount;
+        }
+
+        function removeproduct21(){
+                document.getElementById('prod').innerHTML-=(prod21);
+                sessionStorage.removeItem("prod-21-name");
+                sessionStorage.removeItem("prod-21-quantity");
+                sessionStorage.removeItem("prod-21-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod22name = sessionStorage.getItem("prod-22-name");
+        var prod22quantity = sessionStorage.getItem("prod-22-quantity");
+        var prod22price = sessionStorage.getItem("prod-22-price");
+        var prod22amount = prod22quantity*prod22price;
+
+        if(sessionStorage.getItem("prod-22-name") && sessionStorage.getItem("prod-22-quantity") && sessionStorage.getItem("prod-22-price")){
+            var prod22 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-22-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-22-img'><img src=Images/Product22.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-22-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-22-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-22-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct22();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod22);
+            
+            document.getElementById('prod-22-name').innerHTML+=prod22name;
+            document.getElementById('prod-22-quantity').innerHTML+=prod22quantity;
+            document.getElementById('prod-22-price').innerHTML+=prod22price;
+            document.getElementById("prod-22-amount").innerHTML+=prod22amount;
+        }
+
+        function removeproduct22(){
+                document.getElementById('prod').innerHTML-=(prod22);
+                sessionStorage.removeItem("prod-22-name");
+                sessionStorage.removeItem("prod-22-quantity");
+                sessionStorage.removeItem("prod-22-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod23name = sessionStorage.getItem("prod-23-name");
+        var prod23quantity = sessionStorage.getItem("prod-23-quantity");
+        var prod23price = sessionStorage.getItem("prod-23-price");
+        var prod23amount = prod23quantity*prod23price;
+
+        if(sessionStorage.getItem("prod-23-name") && sessionStorage.getItem("prod-23-quantity") && sessionStorage.getItem("prod-23-price")){
+            var prod23 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-23-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-23-img'><img src=Images/Product23.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-23-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-23-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-23-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct23();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod23);
+            
+            document.getElementById('prod-23-name').innerHTML+=prod23name;
+            document.getElementById('prod-23-quantity').innerHTML+=prod23quantity;
+            document.getElementById('prod-23-price').innerHTML+=prod23price;
+            document.getElementById("prod-23-amount").innerHTML+=prod23amount;
+        }
+
+        function removeproduct23(){
+                document.getElementById('prod').innerHTML-=(prod23);
+                sessionStorage.removeItem("prod-23-name");
+                sessionStorage.removeItem("prod-23-quantity");
+                sessionStorage.removeItem("prod-23-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod24name = sessionStorage.getItem("prod-24-name");
+        var prod24quantity = sessionStorage.getItem("prod-24-quantity");
+        var prod24price = sessionStorage.getItem("prod-24-price");
+        var prod24amount = prod24quantity*prod24price;
+
+        if(sessionStorage.getItem("prod-24-name") && sessionStorage.getItem("prod-24-quantity") && sessionStorage.getItem("prod-24-price")){
+            var prod24 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-24-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-24-img'><img src=Images/Product24.png width='35%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-24-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-24-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-24-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct24();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod24);
+            
+            document.getElementById('prod-24-name').innerHTML+=prod24name;
+            document.getElementById('prod-24-quantity').innerHTML+=prod24quantity;
+            document.getElementById('prod-24-price').innerHTML+=prod24price;
+            document.getElementById("prod-24-amount").innerHTML+=prod24amount;
+        }
+
+        function removeproduct24(){
+                document.getElementById('prod').innerHTML-=(prod24);
+                sessionStorage.removeItem("prod-24-name");
+                sessionStorage.removeItem("prod-24-quantity");
+                sessionStorage.removeItem("prod-24-price");
+
+                window.location.reload();
+
+            }
+
+        var prod25name = sessionStorage.getItem("prod-25-name");
+        var prod25quantity = sessionStorage.getItem("prod-25-quantity");
+        var prod25price = sessionStorage.getItem("prod-25-price");
+        var prod25amount = prod25quantity*prod25price;
+
+        if(sessionStorage.getItem("prod-25-name") && sessionStorage.getItem("prod-25-quantity") && sessionStorage.getItem("prod-25-price")){
+            var prod25 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-25-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-25-img'><img src=Images/Product25.png width='21%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-25-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-25-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-25-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct25();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod25);
+            
+            document.getElementById('prod-25-name').innerHTML+=prod25name;
+            document.getElementById('prod-25-quantity').innerHTML+=prod25quantity;
+            document.getElementById('prod-25-price').innerHTML+=prod25price;
+            document.getElementById("prod-25-amount").innerHTML+=prod25amount;
+        }
+
+        function removeproduct25(){
+                document.getElementById('prod').innerHTML-=(prod25);
+                sessionStorage.removeItem("prod-25-name");
+                sessionStorage.removeItem("prod-25-quantity");
+                sessionStorage.removeItem("prod-25-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod26name = sessionStorage.getItem("prod-26-name");
+        var prod26quantity = sessionStorage.getItem("prod-26-quantity");
+        var prod26price = sessionStorage.getItem("prod-26-price");
+        var prod26amount = prod26quantity*prod26price;
+
+        if(sessionStorage.getItem("prod-26-name") && sessionStorage.getItem("prod-26-quantity") && sessionStorage.getItem("prod-26-price")){
+            var prod26 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-26-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-26-img'><img src=Images/Product26.png width='21%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-26-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-26-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-26-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct26();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod26);
+            
+            document.getElementById('prod-26-name').innerHTML+=prod26name;
+            document.getElementById('prod-26-quantity').innerHTML+=prod26quantity;
+            document.getElementById('prod-26-price').innerHTML+=prod26price;
+            document.getElementById("prod-26-amount").innerHTML+=prod26amount;
+        }
+
+        function removeproduct26(){
+                document.getElementById('prod').innerHTML-=(prod26);
+                sessionStorage.removeItem("prod-26-name");
+                sessionStorage.removeItem("prod-26-quantity");
+                sessionStorage.removeItem("prod-26-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod27name = sessionStorage.getItem("prod-27-name");
+        var prod27quantity = sessionStorage.getItem("prod-27-quantity");
+        var prod27price = sessionStorage.getItem("prod-27-price");
+        var prod27amount = prod27quantity*prod27price;
+
+        if(sessionStorage.getItem("prod-27-name") && sessionStorage.getItem("prod-27-quantity") && sessionStorage.getItem("prod-27-price")){
+            var prod27 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-27-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-27-img'><img src=Images/Product27.png width='21%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-27-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-27-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-27-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct27();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod27);
+            
+            document.getElementById('prod-27-name').innerHTML+=prod27name;
+            document.getElementById('prod-27-quantity').innerHTML+=prod27quantity;
+            document.getElementById('prod-27-price').innerHTML+=prod27price;
+            document.getElementById("prod-27-amount").innerHTML+=prod27amount;
+        }
+
+        function removeproduct27(){
+                document.getElementById('prod').innerHTML-=(prod27);
+                sessionStorage.removeItem("prod-27-name");
+                sessionStorage.removeItem("prod-27-quantity");
+                sessionStorage.removeItem("prod-27-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod28name = sessionStorage.getItem("prod-28-name");
+        var prod28quantity = sessionStorage.getItem("prod-28-quantity");
+        var prod28price = sessionStorage.getItem("prod-28-price");
+        var prod28amount = prod28quantity*prod28price;
+
+        if(sessionStorage.getItem("prod-28-name") && sessionStorage.getItem("prod-28-quantity") && sessionStorage.getItem("prod-28-price")){
+            var prod28 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-28-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-28-img'><img src=Images/Product28.png width='21%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-28-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-28-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-28-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct28();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod28);
+            
+            document.getElementById('prod-28-name').innerHTML+=prod28name;
+            document.getElementById('prod-28-quantity').innerHTML+=prod28quantity;
+            document.getElementById('prod-28-price').innerHTML+=prod28price;
+            document.getElementById("prod-28-amount").innerHTML+=prod28amount;
+        }
+
+        function removeproduct28(){
+                document.getElementById('prod').innerHTML-=(prod28);
+                sessionStorage.removeItem("prod-28-name");
+                sessionStorage.removeItem("prod-28-quantity");
+                sessionStorage.removeItem("prod-28-price");
+
+                window.location.reload();
+
+            }
+
+
+
+        var prod29name = sessionStorage.getItem("prod-29-name");
+        var prod29quantity = sessionStorage.getItem("prod-29-quantity");
+        var prod29price = sessionStorage.getItem("prod-29-price");
+        var prod29amount = prod29quantity*prod29price;
+
+        if(sessionStorage.getItem("prod-29-name") && sessionStorage.getItem("prod-29-quantity") && sessionStorage.getItem("prod-29-price")){
+            var prod29 = ("<div class='row product-list2'><div class='col-md-3 col-sm-3 col-xs-3'><span class='Ingredients'></i><center id='prod-29-name'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2 mq1'><center><span class='Ingredients' id='prod-29-img'><img src=Images/Product29.png width='21%'></span></center></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-29-quantity'></center></span></div><div class='col-md-2 col-sm-2 col-xs-2'><span class='Ingredients'><center id='prod-29-price'></center></span></div><div class='col-md-2 col-sm-2 col-xs-3'><span class='Ingredients'><center id='prod-29-amount'></center></span></div><div class='col-md-1 col-sm-1 col-xs-1'><span class='Ingredients'><center><i class='glyphicon glyphicon-remove' onclick='removeproduct29();' id='prod-1-delete'></i></center></span></div></div>");
+            document.getElementById('prod').innerHTML+=(prod29);
+            
+            document.getElementById('prod-29-name').innerHTML+=prod29name;
+            document.getElementById('prod-29-quantity').innerHTML+=prod29quantity;
+            document.getElementById('prod-29-price').innerHTML+=prod29price;
+            document.getElementById("prod-29-amount").innerHTML+=prod29amount;
+        }
+
+        function removeproduct29(){
+                document.getElementById('prod').innerHTML-=(prod29);
+                sessionStorage.removeItem("prod-29-name");
+                sessionStorage.removeItem("prod-29-quantity");
+                sessionStorage.removeItem("prod-29-price");
+
+                window.location.reload();
+
+            }
+
+        
+        
+        var total=0;
+        
+
+
+        total+=prod1amount;
+        total+=prod2amount;
+        total+=prod3amount;
+        total+=prod4amount;
+        total+=prod5amount;
+        total+=prod6amount;
+        total+=prod7amount;
+        total+=prod8amount;
+        total+=prod9amount;
+        total+=prod10amount;
+        total+=prod11amount;
+        total+=prod12amount;
+        total+=prod13amount;
+        total+=prod14amount;
+        total+=prod15amount;
+        total+=prod16amount;
+        total+=prod17amount;
+        total+=prod18amount;
+        total+=prod19amount;
+        total+=prod20amount;
+        total+=prod21amount;
+        total+=prod22amount;
+        total+=prod23amount;
+        total+=prod24amount;
+        total+=prod25amount;
+        total+=prod26amount;
+        total+=prod27amount;
+        total+=prod28amount;
+        total+=prod29amount;
+
+        sessionStorage.setItem("total",total);
+     
+     document.getElementById('total').innerHTML+=total;
+    </script>
+
+    
+</body>
+</html>

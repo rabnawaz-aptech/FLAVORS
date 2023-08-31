@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAVORS</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="css/product.css">
+    <style>
+        @media only screen and (min-width:768px ) and (max-width:992px ) {
+            .car1{
+                height: 450px !important;
+            }
+            .box3{
+                margin-top: -300px;
+                position: absolute;
+                left: 5%;
+            }
+            .head4{
+                font-size: 35px;
+            }
+            .box9{
+                margin-top: -255px;
+                position: absolute;
+                left: 50%;
+                width: 200px;
+            }
+            .box11{
+                margin-top: -300px;
+                position: absolute;
+                left: 5%;
+            }
+            .box10{
+                margin-top: -283px;
+                position: absolute;
+                left: 62%;
+                width: 175px;
+            }
+            .head7{
+                font-size: 30px;
+            }
+            .box12{
+                margin-top: -345px;
+                position: absolute;
+                left: 60%;
+                width: 155px;
+            }
+            .box13{
+                margin-top: -285px;
+                position: absolute;
+                left: 53%;
+                width: 180px;
+            }
+            .box7{
+                margin-top: 315px;
+            }
+            .dil1{
+                margin-left: 255px;
+                width: 200px;
+            }
+            .box14{
+                position: absolute;
+                top: -120px;
+                left: 105px;
+            }
+            .ic1{
+                width: 130px;
+            }
+            .head1{
+                font-size: 20px;
+            }
+            .box15{
+                height: 300px;
+            }
+            .box16{
+                top: 25px;
+                left: 45px;
+            }
+            .head11{
+                font-size: 29px;
+            }
+            .head12{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+        }
+        @media screen and (min-width:320px ) and (max-width:767px ){
+            .car1{
+                height: 280px !important;
+            }
+            .sli{
+                    margin-left: -70px;
+            }
+            .head2{
+                font-size: 35px;
+            }
+            .vid1{
+                margin-top: -100px;
+            }
+            .head3{
+                margin-top: 0px;
+            }
+            .head4{
+                font-size: 19px;
+            }
+            .box4{
+                margin-top: -130px;
+            }
+            .box3{
+                margin-top: -195px;
+                position: absolute;
+                left: 13%;
+            }
+            .box5{
+                margin-top: -170px;
+            }
+            .box7{
+                margin-top: 250px;
+            }
+            .hr3{
+                margin-top: 100px;
+            }
+            .butn1{
+                width: 70px;
+                font-size: 8px;
+            }
+            .box9{
+                margin-top: -154px;
+                position: absolute;
+                left: 50%;
+                width: 25%;
+            }
+            .box10{
+                margin-top: -175px;
+                position: absolute;
+                left: 60%;
+                width: 23%
+            }
+            .box11{
+                margin-top: -195px;
+                position: absolute;
+                left: 8%;
+            }
+            .head7{
+                font-size: 16px;
+            }
+            .box12{
+                margin-top: -199px;
+                position: absolute;
+                left: 59%;
+                width: 20%
+            }
+            .box13{
+                margin-top: -175px;
+                position: absolute;
+                left: 55%;
+                width: 23%;
+
+            }
+            .dil1{
+                margin-left: 40px;
+            }
+            .hr4{
+                margin-top: 125px;
+            }
+            .slic2{
+                margin-left: -22px !important;
+            }
+            .box16{
+                top: 0;
+                left: 3px;
+            }
+            .head11{
+                font-size: 30px;
+            }
+            .head12{
+                font-size: 15px;
+                margin-top: 15px;
+            }
+
+         
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="container">
+            <nav class="nav">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand logo"><img src="Images/Group 3 2.png" width="92px" height="70px" alt=""></a>
+                    <ul class="nav navbar-right">
+                        <li class="mobile-menu"><button class="btn"><i class="glyphicon glyphicon-menu-hamburger"></i></button></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav main-menu">
+                    <li class="active"><a href="index.html" class="m1">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="products.html">Cooking Sauces</a></li>
+                          <li><a href="products.html">Recipe Mixes</a></li>
+                          <li><a href="products.html">Plain Spices</a></li>
+                          <li><a href="products.html">Other Products</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="mobile-menu2"><a href="#" data-target="#Login" data-toggle="modal">Log In</a></li>
+                    <li class="mobile-menu2"><a href="#" data-target="#Signup" data-toggle="modal">Sign Up</a></li>
+                    <li class="mobile-menu2"><a href="cart.html">Cart<i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right main-menu-2">
+                    <li class="main-menu" data-target="#Login" data-toggle="modal"><a href="#">Log In</i></a></li>
+                    <li class="main-menu" data-target="#Signup" data-toggle="modal"><a href="#">Sign Up</i></a></li>
+                    <li class="main-menu"><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </div>
+
+    <div class="modal" id="Login">
+
+		<div class="modal-dialog">
+			<div class="modal-content modal-content2">
+                <div class="modal-header">
+                    <i class="close" data-target="#Login" data-toggle="modal">&times;</i>
+                    <h2 class="log-h1">Log In</h2>
+                </div>
+                <div class="modal-body">
+                    <label class="list-name">Email:</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email Address" required>
+                    <label class="list-name">Password:</label>
+                    <input type="password" required class="form-control" placeholder="Password" required>
+                    <br>
+                    <span class="login-span"><span><a href="#">Forgot Password?</a></span><span class="login-span2" data-target="#Login" data-toggle="modal"><a href="#" data-target="#Signup" data-toggle="modal">Sign Up</a></span></span>
+                    <br><br>
+                    <button class="btn my-btn">Log In</button>
+                </div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="modal" id="Signup">
+
+		<div class="modal-dialog">
+			<div class="modal-content modal-content2">
+                <div class="modal-header">
+                    <i class="close" data-target="#Signup" data-toggle="modal">&times;</i>
+                    <h2 class="log-h1">Sign Up</h2>
+                </div>
+                <div class="modal-body">
+                    <label class="list-name">First Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your First Name" required>
+                    <label class="list-name">Last Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your Last Name" required>
+                    <label class="list-name">Email:</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email Address" required>
+                    <label class="list-name">Password:</label>
+                    <input type="password" required class="form-control" placeholder="Password" required>
+                    <span class="login-span">Password must be atleast 8 characters</span>
+                    <br><br>
+                    <label class="list-name">Phone Number:</label>
+                    <input type="tel" maxlength="11" required class="form-control" placeholder="Phone Number" required>
+                    <br><br>
+                    <button class="btn my-btn"  data-target="#Signup" data-toggle="modal">Sign Up</button>
+                </div>
+			</div>
+		</div>
+	</div>
+
+    
+    
+    <div class="carousel slide" data-ride="carousel" id="mycar">
+    <ol class="carousel-indicators">
+        <li class="carousel-indicator active" data-target="#mycar" data-slide-to="0"></li>
+        <li class="carousel-indicator" data-target="#mycar" data-slide-to="1"></li>
+        <li class="carousel-indicator" data-target="#mycar" data-slide-to="2"></li>
+        <li class="carousel-indicator" data-target="#mycar" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="car1"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box3"> <center><h1 class="head4">Add a little spice <br>to your life</h1>
+                <button class="btn butn1">SHOP NOW</button></center></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box9"> 
+                        <img src="Images/picc1.png" width="150%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="car1"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box11"> <center><h1 class="head4">The natural spices to<br> enhance your recipe</h1>
+                <button class="btn butn1">SHOP NOW</button></center></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box10"> 
+                        <img src="Images/picc3.png" width="150%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="car1"></div>
+             <div class="row">
+                <div class="col-md-6">
+                    <div class="box11"> <center><h1 class="head7">The authentic spices <br> for the authentic taste</h1>
+                <button class="btn butn1">SHOP NOW</button></center></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box12"> 
+                        <img src="Images/picc2.png" width="150%">
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+        <div class="item">
+            <div class="car1"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box3"> <center><h1 class="head7">The real taste <br> for the real people</h1>
+                <button class="btn butn1">SHOP NOW</button></center></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box13"> 
+                        <img src="Images/picc4.png" width="150%">
+                    </div>
+                </div>
+            </div>
+        </div>  
+            </div>
+        
+    
+
+    <a href="" class="carousel-control left cy" data-slide="prev" data-target="#mycar"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a href="" class="carousel-control right cy" data-slide="next" data-target="#mycar"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+    <hr class="hr1">
+
+     <center>
+              <div class=""><h1 class="head8">OUR SAUSES</h1></div>
+          
+          <div class="slider demo sli slic1">
+          <div> <img src="Images/Product2.png"> </div>
+          <div> <img src="Images/Product1.png"> </div>
+          <div> <img src="Images/Product3.png"> </div>
+          <div> <img src="Images/Product4.png"> </div>
+          <div> <img src="Images/Product5.png"> </div>
+          <div> <img src="Images/Product6.png"> </div>
+          <div> <img src="Images/Product7.png"> </div>
+        
+        </div>
+    </center>
+            <!-- <hr class="hr2"> -->
+
+            <br>
+            <!-- <center>
+            <div class="container box2">
+                <div><h1 class="head2">PAKISTAN'S BEST SPICES</h1></div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box6">
+                            
+                            <img src="Images/pict.jpeg" width="100%" height="600px">
+                            <h3 class="head5">The world of spices</h1>
+                        </div>
+                    </div>
+                     <div class="col-md-8">
+                        <div class="box7">
+
+                            <video src="Videos/vid1.mp4" width="80%" height="275px" loop="" autoplay="" muted=""></video>
+                            <h3 class="head6">The magic of flavors</h3>
+                        </div> 
+                    </div>
+                    <br>
+                    <div class="col-md-8">
+                        <div class="box8">
+                            <video src="Videos/vid2.mp4" width="80%" height="275px" loop="" autoplay="" muted="" class="vid1"></video>
+                            <h3 class="head6">Enhancing taste</h3>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </center> -->
+
+        <div class="box15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="box16">
+                            <h1 class="head11">PAKISTAN'<span class="s1">S</span> BEST SPICES</h1>
+                            <p class="head12">Zest is a seed, natural product, root, bark, or other plant substance principally utilized for seasoning, shading, or safeguarding sustenance.
+                                    Spices are recognized from herbs, which are the leaves, blossoms, or stems of plants utilized for seasoning or as an embellishment. Or, in other words ruining.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="box17">
+                            <img src="" width="50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- <hr class="hr4"> -->
+        <center>
+              <div class=""><h1 class="head8">OUR SPICES</h1></div>
+          <br><br>
+          <div class="slider demo sli slic2">
+          <div> <img src="Images/Product8.png" width="90%"> </div>
+          <div> <img src="Images/Product9.png" width="90%"> </div>
+          <div> <img src="Images/Product10.png" width="100%"> </div>
+          <div> <img src="Images/Product17.png" width="100%"> </div>
+          <div> <img src="Images/Product18.png" width="90%"> </div>
+          <div> <img src="Images/Product19.png" width="100%"> </div>
+          
+        
+        </div>
+    </center>
+            <hr class="hr5">
+  <div class="container">
+        <div class=""><center><h1 class="head8">GET TO KNOW US</h1></center></div>
+              <div class="row row1">
+                   <div class="col-sm-4 col-md-4">
+                       <div class="box1 box18">
+                           <center><img src="Images/icon1.png" width="30%" class="ic1 imi1">
+                           <h3 class="head9">HALAL AND <br> 100% PURE SPICES</h3></center>
+                       </div>
+                   </div>
+                   <div class="col-sm-4 col-md-4">
+                       <div class="box1 box18">
+                           <center><img src="Images/icon2.png" width="30%" class="ic1 imi1">
+                           <h3 class="head9">SUITABLE FOR <br> VEGETARIANS</h3></center>
+                       </div>
+                   </div>
+                   <div class="col-sm-4 col-md-4">
+                       <div class="box1 box18">
+                           <center><img src="Images/icon3.png" width="30%" class="ic1 imi1">
+                           <h3 class="head9">REAL AND <br> AUTHENTIC TASTES</h3></center>
+                       </div>
+                   </div>
+              </div>
+          </div>
+          <hr class="hr2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div><img src="Images/dil2.png" width="70%" class="dil1"></div>
+                  </div>
+                  <div class="col-md-8">
+                      <div class="box14"><center><h1 class="head8 head3 ">DELIVERY ALL OVER PAKISTAN</h1></center></div>
+                  </div>
+              </div>
+          </div>
+
+          <hr class="hr2">
+          <center><div><img src="Images/ic7.png" class="im8">
+            <h1 class="head8">USER REVIEW</h1>
+            <p class="head9">OUR VALUABLE USER REVIEW</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div>
+                            <h3 class="para1 head10">Micheles Doe</h3>
+                            <p class="para1 head9">Architect, California</p>
+                            <p class="para1 head9">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire</p>
+                            <p class="para2 para1 head9">Sauses <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i></span>  </p>
+                            <p class="para2 para1 head9">Recipe Mix <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span> </p>
+                            <p class="para2 para1 head9">Service <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span></p>
+                            <p class="para2 para1 head9">Price <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div>
+                            <h3 class="para1 head10">Gerard Doe</h3>
+                            <p class="para1 head9">Artist, Utah</p>
+                            <p class="para1 head9">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire</p>
+                            <p class="para2 para1 head9">Sauses <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i></span>  </p>
+                            <p class="para2 para1 head9">Recipe Mix <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span> </p>
+                            <p class="para2 para1 head9">Service <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span></p>
+                            <p class="para2 para1 head9">Price <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div>
+                            <h3 class="para1 head10">Micheles Butler</h3>
+                            <p class="para1 head9">Scientist, Berlin</p>
+                            <p class="para1 head9">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire</p>
+                            <p class="para2 para1 head9">Sauses <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i></span>  </p>
+                            <p class="para2 para1 head9">Recipe Mix <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span> </p>
+                            <p class="para2 para1 head9">Service <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span></p>
+                            <p class="para2 para1 head9">Price <span class="stars"><i class="glyphicon glyphicon-star gly1"></i> <i class="glyphicon glyphicon-star gly1"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i>  <i class="glyphicon glyphicon-star gly2"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+
+          <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <img src="Images/Logo.png" width="30%" alt="">
+                        <h4>FLAVORS Inc. (Pvt) Ltd.</h4>
+                        <p>The true Ambassadors of Spices.</p>
+                        <p>Saima Trade Tower، B-115, 1st Floor, I.I Chundrigar Rd, Karachi, Karachi City, Sindh.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                            <center><h3>Follow us on Social Media</h3>
+                                <a href="https://facebook.com"><img src="Images/Facebook-Logo.png" width="20%" class="icon icon1"></a>
+                                <a href="https://instagram.com"><img src="Images/Instagram-Logo.png" width="20%" class="icon icon2"></a>
+                                <a href="https://twitter.com"><img src="Images/Twitter-Logo.png" width="20%" class="icon icon3"></a><br>
+                                <h4>FLAVORS Inc.</h4>
+                            </center>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span class="footer-link">
+                            <center>
+                                <h3>Get in Touch with Us</h3>
+                                <a href="mailto:rabnawaz.aptech@gmail.com"><img src="Images/Mail-Icon.png" width="7%" alt=""><br>info@flavors.com<br><br></a>
+                                <img src="Images/Phone-Icon.png" width="7%" alt=""><br>(021) 32277221
+                            </center>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <center>Copyright &copy; 2023 FLAVORS Inc. All Rights Reserved</center>
+        </div>
+
+          </center>
+         
+        <script src="jquery.min.js"></script>
+        <script src="slick.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".mobile-menu").click(function(){
+                $(".main-menu").slideToggle();
+            });
+            $(".dropdown").click(function(){
+                $(".dropdown-menu").slideToggle();
+            });
+        });
+
+        $(document).ready(function(){
+        $('.demo').slick({
+             dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+        });
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+body{
+	overflow-x: hidden;
+}
+
+.car1{
+	width: 100%;
+	height: 450px !important;
+	background-color: black;
+}
+.hr1{
+	border: 1px solid lightgrey;
+	margin-top: 25px;
+}
+.row1{
+	margin-top: 50px;
+}
+.hr2{
+	border: 1px solid lightgrey;
+	margin-top: 50px;
+}
+.head1{
+	text-align: center;
+	
+	font-family: font8;
+	transition: 0.6s;
+}
+@font-face{
+	font-family: "font1";
+	src: url("../fonts/font3.ttf");
+}
+.head2{
+	font-size: 35px;
+	font-family: font2;
+	transition: 0.6s;
+}
+@font-face{
+	font-family: "font2";
+	src: url("../fonts/font4.otf");
+}
+.vid1{
+	margin-top: 40px;
+}
+.head3{
+	margin-top: 95px;
+}
+.box2 h1:hover{
+	color: #af1d1d;
+}
+.box2 h3:hover{
+	color: #af1d1d;
+}
+.head4{
+	font-family: font3;
+	font-size: 50px;
+	color: white;
+}
+@font-face{
+	font-family: "font3";
+	src: url("../fonts/font5.ttf");
+}
+.box3{
+	margin-top: -355px;
+	position: absolute;
+	left: 30%;
+}
+.butn1{
+	background-color: #af1d1d;
+	color: white;
+	text-decoration: none;
+}
+.box4{
+	margin-top: -240px;
+}
+.box5{
+	margin-top: -350px;
+}
+.head5{
+	margin-top: -300px;
+	color: white;
+	font-family: font3;
+}
+.head6{
+	color: white;
+	font-family: font3;
+	margin-top: -150px;
+}
+.box8{
+	margin-top: 120px;
+}
+.hr3{
+	border: 1px solid lightgrey;
+	margin-top: 150px;
+}
+.box9{
+	margin-top: -320px;
+	position: absolute;
+	left: 0%;
+}
+.box10{
+	margin-top: -360px;
+	position: absolute;
+	left: 10%;
+}
+.box11{
+	margin-top: -390px;
+	position: absolute;
+	left: 30%;
+}
+.head7{
+	font-family: font3;
+	font-size: 50px;
+	color: white;
+}
+.box12{
+	margin-top: -375px;
+	position: absolute;
+	left: 15%;
+}
+.box13{
+	margin-top: -335px;
+	position: absolute;
+	left: 10%;
+
+}
+.hr4{
+	border: 1px solid lightgrey;
+	margin-top: 250px;
+}
+.hr5{
+	border: 1px solid lightgrey;
+    margin-top: 35px;
+}
+@font-face{
+	font-family: "font7";
+	src: url("../fonts/font7.ttf");
+}
+@font-face{
+	font-family: "font8";
+	src: url("../fonts/font9.ttf");
+}
+.slic1{
+	margin-left: -75px;
+}
+.slic2{
+	margin-left: 0px;
+}
+.box15{
+	background-color: black;
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@font-face{
+	font-family: "DancingScript";
+	src: url('../Font/DancingScript/DancingScript-Bold.ttf');
+}
+@font-face{
+	font-family: "Andika";
+	src: url('../Font/Andika/Andika-Regular.ttf');
+}
+@font-face{
+	font-family: "Effra Regular";
+	src: url('../Font/effra_sv/Effra_Std_Rg.ttf');
+}
+.head8{
+	font-family: "Effra Regular", sans-serif;
+	color: #000000;
+	font-weight: bold;
+}
+.para1{
+	text-align: left;
+}
+.para2{
+	color: #af1d1d;
+}
+.gly1{
+	color: #af1d1d;
+}
+.gly2{
+	color: lightgrey;
+}
+.stars{
+	position: absolute;
+	right: 20px;
+}
+.head9{
+	font-family: "Andika", sans-serif;
+}
+.head10{
+	font-family: "DancingScript", sans-serif;
+	color: #af1d1d;
+}
+.head11{
+	font-family: "Effra Regular", sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 50px;
+}
+.box16{
+	position: absolute;
+    top: 55px;
+    left: -96px;
+}
+.head12{
+	font-family: "Andika", sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 20px;
+}
+.s1{
+	color: #af1d1d;
+}
+.box17{
+	position: absolute;
+    top: 65px;
+    
+}
+.box18 img:hover{
+	transform: scale(1.2);
+}
+.imi1{
+	transition: 0.6s;
+}
+

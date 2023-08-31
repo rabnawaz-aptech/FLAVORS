@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FLAVORS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="css/xzoom.css"> -->
+    <!-- <script src="css/xzoom.js"></script> -->
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="container">
+            <nav class="nav">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand logo"><img src="Images/Group 3 2.png" width="92px" height="70px" alt=""></a>
+                    <ul class="nav navbar-right">
+                        <li class="mobile-menu"><button class="btn"><i class="glyphicon glyphicon-menu-hamburger"></i></button></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav main-menu">
+                    <li class="active"><a href="index.html" class="m1">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="products.html">Cooking Sauces</a></li>
+                          <li><a href="products.html">Recipe Mixes</a></li>
+                          <li><a href="products.html">Plain Spices</a></li>
+                          <li><a href="products.html">Other Products</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="mobile-menu2"><a href="#" data-target="#Login" data-toggle="modal">Log In</a></li>
+                    <li class="mobile-menu2"><a href="#" data-target="#Signup" data-toggle="modal">Sign Up</a></li>
+                    <li class="mobile-menu2"><a href="cart.html">Cart<i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right main-menu-2">
+                    <li class="main-menu" data-target="#Login" data-toggle="modal"><a href="#">Log In</i></a></li>
+                    <li class="main-menu" data-target="#Signup" data-toggle="modal"><a href="#">Sign Up</i></a></li>
+                    <li class="main-menu"><a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </div>
+
+    <div class="modal" id="Login">
+
+		<div class="modal-dialog">
+			<div class="modal-content modal-content2">
+                <div class="modal-header">
+                    <i class="close" data-target="#Login" data-toggle="modal">&times;</i>
+                    <h2 class="log-h1">Log In</h2>
+                </div>
+                <div class="modal-body">
+                    <label class="list-name">Email:</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email Address" required>
+                    <label class="list-name">Password:</label>
+                    <input type="password" required class="form-control" placeholder="Password" required>
+                    <br>
+                    <span class="login-span"><span><a href="#">Forgot Password?</a></span><span class="login-span2" data-target="#Login" data-toggle="modal"><a href="#" data-target="#Signup" data-toggle="modal">Sign Up</a></span></span>
+                    <br><br>
+                    <button class="btn my-btn">Log In</button>
+                </div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="modal" id="Signup">
+
+		<div class="modal-dialog">
+			<div class="modal-content modal-content2">
+                <div class="modal-header">
+                    <i class="close" data-target="#Signup" data-toggle="modal">&times;</i>
+                    <h2 class="log-h1">Sign Up</h2>
+                </div>
+                <div class="modal-body">
+                    <label class="list-name">First Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your First Name" required>
+                    <label class="list-name">Last Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your Last Name" required>
+                    <label class="list-name">Email:</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email Address" required>
+                    <label class="list-name">Password:</label>
+                    <input type="password" required class="form-control" placeholder="Password" required>
+                    <span class="login-span">Password must be atleast 8 characters</span>
+                    <br><br>
+                    <label class="list-name">Phone Number:</label>
+                    <input type="tel" maxlength="11" required class="form-control" placeholder="Phone Number" required>
+                    <br><br>
+                    <button class="btn my-btn"  data-target="#Signup" data-toggle="modal">Sign Up</button>
+                </div>
+			</div>
+		</div>
+	</div>
+
+    <!-- <img src="Images/product-cover.jpg" width="100%" height="400px" alt=""> -->
+    
+
+    <div class="container product-cover">
+        <center><h1 class="h11">Our Products</h1></center>
+    </div>
+    
+    <div class="container">
+        <h2 class="h2">Cooking Sauces</h2>
+        <hr class="hr">
+    </div>
+
+    <div class="sauces">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product7.png" width="100%" alt="">
+                        <span class="list-name">Jalfrezi Sauce</span>
+                        <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.250/- <span class="list-cost">Price: Rs.350/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal7" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product1.png" width="100%" alt="">
+                        <span class="list-name">Korma Sauce</span>
+                        <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.250/- <span class="list-cost">Price: Rs.350/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal1" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product2.png" width="100%" alt="">
+                        <span class="list-name">Pilau Biryani Sauce</span>
+                        <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.250/- <span class="list-cost">Price: Rs.350/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal2" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product3.png" width="100%" alt="">
+                        <span class="list-name">Achar Gosht Sauce</span>
+                        <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.250/- <span class="list-cost">Price: Rs.350/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal3" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product4.png" width="100%" alt="">
+                        <span class="list-name">Sindhi Biryani Sauce</span>
+                        <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.250/- <span class="list-cost">Price: Rs.350/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal4" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product5.png" width="100%" alt="">
+                        <span class="list-name">Butter Chicken Sauce</span>
+                        <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.250/- <span class="list-cost">Price: Rs.350/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal5" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product6.png" width="100%" alt="">
+                        <span class="list-name">Bombay Biryani Sauce</span>
+                        <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.250/- <span class="list-cost">Price: Rs.350/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal6" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="h2">Recipe Mixes</h2>
+        <hr class="hr">
+    </div>
+
+    <div class="sauces">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product8.png" width="95%" alt="">
+                        <span class="list-name">Meat Masala</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal8" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product9.png" width="100%" alt="">
+                        <span class="list-name">Chicken Masala</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal9" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product10.png" width="100%" alt="">
+                        <span class="list-name">Sambar Masala</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal10" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product11.png" width="100%" alt="">
+                        <span class="list-name">Fish Masala</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal11" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product12.png" width="100%" alt="">
+                        <span class="list-name">Nihari</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal12" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product13.png" width="100%" alt="">
+                        <span class="list-name">Kofta</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal13" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product14.png" width="94%" alt="">
+                        <span class="list-name">Korma</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal14" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product15.png" width="94%" alt="">
+                        <span class="list-name">Murgh Cholay</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal15" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product16.png" width="88%" alt="">
+                        <span class="list-name">Shami Kabab</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal16" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product17.png" width="100%" alt="">
+                        <span class="list-name">Dhahi Bara Mix</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal17" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product18.png" width="94%" alt="">
+                        <span class="list-name">Chicken Broast</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal18" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product19.png" width="100%" alt="">
+                        <span class="list-name">Lahori Charga</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal19" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product20.png" width="94%" alt="">
+                        <span class="list-name">Chicken Tikka</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal20" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product21.png" width="100%" alt="">
+                        <span class="list-name">Seekh Kabab</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal21" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product22.png" width="94%" alt="">
+                        <span class="list-name">Tandoori Masala</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal22" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product23.png" width="91%" alt="">
+                        <span class="list-name">Pav Phaji</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal23" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product24.png" width="98%" alt="">
+                        <span class="list-name">Vegetable Masala</span>
+                        <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.100/- <span class="list-cost">Price: Rs.120/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal24" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2 class="h2">Plain Spices</h2>
+        <hr class="hr">
+    </div>
+
+    <div class="sauces">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product25.png" width="95%" alt="">
+                        <span class="list-name">Turmeric Powder</span>
+                        <p class="list-category"><a href="#">Plain Spices</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.80/- <span class="list-cost">Price: Rs.100/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal25" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product26.png" width="97%" alt="">
+                        <span class="list-name">Red Chilli Powder</span>
+                        <p class="list-category"><a href="#">Plain Spices</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.80/- <span class="list-cost">Price: Rs.100/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal26" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product27.png" width="95%" alt="">
+                        <span class="list-name">Black Pepper Powder</span>
+                        <p class="list-category"><a href="#">Plain Spices</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.80/- <span class="list-cost">Price: Rs.100/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal27" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product28.png" width="95%" alt="">
+                        <span class="list-name">Curry Powder</span>
+                        <p class="list-category"><a href="#">Plain Spices</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.80/- <span class="list-cost">Price: Rs.100/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal28" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="h2">Other Products</h2>
+        <hr class="hr">
+    </div>
+
+    <div class="sauces">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-list">
+                        <img src="Images/Product29.png" width="95%" alt="">
+                        <span class="list-name">Himalayan Pink Salt</span>
+                        <p class="list-category"><a href="#">Salt</a></p>
+                        <p class="list-price"><span class="price-span">Price:</span> Rs.170/- <span class="list-cost">Price: Rs.200/-</span></p>
+                        <button class="btn my-btn" data-target="#myModal29" data-toggle="modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+
+
+
+
+	<div class="modal" id="myModal1">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal1" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product1.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-1-name">Korma Sauce</span> - 350gm Jar</span>
+                            <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                            <p class="list-price-b"><span class="price-span">Price:</span>Rs.<span id="prod-1-price">250</span>/- <span class="list-cost">Price: Rs.350/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-1-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product1();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal2">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal2" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product2.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-2-name">Pilau Biryani Sauce</span> - 350gm Jar</span>
+                            <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                            <p class="list-price-b"><span class="price-span">Price:</span>Rs.<span id="prod-2-price">250</span>/- <span class="list-cost">Price: Rs.350/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-2-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product2();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-6"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-6"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal3">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal3" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product3.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-3-name">Achar Gosht Sauce</span> - 350gm Jar</span>
+                            <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                            <p class="list-price-b"><span class="price-span">Price:</span>Rs.<span id="prod-3-price">250</span>/- <span class="list-cost">Price: Rs.350/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-3-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product3();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal4">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal4" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product4.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-4-name">Sindhi Biryani Sauce</span> - 350gm Jar</span>
+                            <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                            <p class="list-price-b"><span class="price-span">Price:</span>Rs.<span id="prod-4-price">250</span>/- <span class="list-cost">Price: Rs.350/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-4-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product4();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal5">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal5" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product5.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-5-name">Butter Chicken Sauce</span> - 350gm Jar</span>
+                            <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                            <p class="list-price-b"><span class="price-span">Price:</span>Rs.<span id="prod-5-price">250</span>/- <span class="list-cost">Price: Rs.350/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-5-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product5();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal6">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal6" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product6.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-6-name">Bombay Biryani Sauce</span> - 350gm Jar</span>
+                            <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                            <p class="list-price-b"><span class="price-span">Price:</span>Rs.<span id="prod-6-price">250</span>/- <span class="list-cost">Price: Rs.350/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-6-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product6();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal7">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal7" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product7.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-7-name">Jalfrezi Sauce</span> - 350gm Jar</span>
+                            <p class="list-category"><a href="#">Cooking Sauces</a></p>
+                            <p class="list-price-b"><span class="price-span">Price:</span>Rs.<span id="prod-7-price">250</span>/- <span class="list-cost">Price: Rs.350/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-7-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product7();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal8">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal8" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product8.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-8-name">Meat Masala</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-8-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-8-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product8();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal9">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal9" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product9.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-9-name">Chicken Masala</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-9-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-9-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product9();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal10">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal10" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product10.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-10-name">Sambar Masala</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-10-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-10-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product10();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal11">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal11" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product11.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-11-name">Fish Masala</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-11-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-11-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product11();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal12">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal12" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product12.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-12-name">Nihari</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-12-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-12-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product12();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal13">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal13" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product13.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-13-name">Kofta</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-13-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-13-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product13();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal14">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal14" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product14.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-14-name">Korma</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-14-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-14-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product14();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal15">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal15" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product15.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-15-name">Murgh Cholay</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-15-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-15-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product15();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal16">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal16" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product16.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-16-name">Shami Kabab</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-16-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-16-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product16();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal17">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal17" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product17.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-17-name">Dhahi Bara Mix</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-17-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-17-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product17();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal18">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal18" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product18.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-18-name">Chicken Broast</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-18-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-18-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product18();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal19">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal19" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product19.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-19-name">Lahori Charga</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-19-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-19-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product19();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal20">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal20" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product20.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-20-name">Chicken Tikka</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-20-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-20-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product20();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal21">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal21" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product21.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-21-name">Seekh Kabab</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-21-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-21-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product21();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal22">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal22" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product22.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-22-name">Tandoori Maslala</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-22-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-22-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product22();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal23">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal23" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product23.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-23-name">Pav Bhaji</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-23-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-23-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product23();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal24">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal24" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product24.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-24-name">Vegetable Masala</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Recipe Mixes</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-24-price">100</span>/- <span class="list-cost">Price: Rs.120/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-24-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product24();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal25">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal25" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product25.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-25-name">Turmeric Powder</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Plain Spices</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-25-price">80</span>/- <span class="list-cost">Price: Rs.100/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-25-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product25();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal26">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal26" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product26.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-26-name">Red Chilli Powder</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Plain Spices</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-26-price">80</span>/- <span class="list-cost">Price: Rs.100/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-26-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product26();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal27">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal27" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product27.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-27-name">Black Pepper Powder</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Plain Spices</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-27-price">80</span>/- <span class="list-cost">Price: Rs.100/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-27-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product27();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal28">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal28" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product28.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-28-name">Curry Powder</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Plain Spices</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-28-price">80</span>/- <span class="list-cost">Price: Rs.100/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-28-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product28();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="modal" id="myModal29">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+                <div class="modal-body">
+					<i class="close" data-target="#myModal29" data-toggle="modal">&times</i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <img src="Images/Product29.png" width="100%" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <span class="list-name"><span id="prod-29-name">Himalayan Pink Salt</span> - 100gm Pack</span>
+                            <p class="list-category"><a href="#">Salt</a></p>
+                            <p class="list-price-b"><span class="price-span">Price: </span>Rs.<span id="prod-29-price">170</span>/- <span class="list-cost">Price: Rs.200/-</span><br>
+                            <span class="rating">Rating: </span><img src="Images/stars.png" width="35%" alt=""></p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <input type="number" min="1" value="1" class="form-control quantity"  id="prod-29-quantity">
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <button class="btn my-btn" onclick="product29();">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="p-hr">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="h3">Ingredients:</h3>
+                            <p class="Ingredients2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas similique amet ad! Eos temporibus mollitia assumenda, provident omnis.</p>
+                            <ul class="Ingredients2">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                <li> Culpa fugiat fugit voluptatibus quaerat numquam quo repellendus.</li>
+                                <li>Dolorum dicta vel autem quasi? Repellendus ipsum dolor.</li>
+                                <li>Velit repellat delectus nemo eligendi consequatur!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row Review">
+                        <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" class="form-control" id="review" placeholder="Give us Review"></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12"><button class="btn my-btn" onclick="review();">Submit</button></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="Images/Logo.png" width="30%" alt="">
+                    <h4>FLAVORS Inc. (Pvt) Ltd.</h4>
+                    <p>The true Ambassadors of Spices.</p>
+                    <p>Saima Trade Tower، B-115, 1st Floor, I.I Chundrigar Rd, Karachi, Karachi City, Sindh.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                        <center><h3>Follow us on Social Media</h3>
+                            <a href="https://facebook.com"><img src="Images/Facebook-Logo.png" width="20%" class="icon icon1"></a>
+                            <a href="https://instagram.com"><img src="Images/Instagram-Logo.png" width="20%" class="icon icon2"></a>
+                            <a href="https://twitter.com"><img src="Images/Twitter-Logo.png" width="20%" class="icon icon3"></a><br>
+                            <h4>FLAVORS Inc.</h4>
+                        </center>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span class="footer-link">
+                        <center>
+                            <h3>Get in Touch with Us</h3>
+                            <a href="mailto:rabnawaz.aptech@gmail.com"><img src="Images/Mail-Icon.png" width="7%" alt=""><br>info@flavors.com<br><br></a>
+                            <img src="Images/Phone-Icon.png" width="7%" alt=""><br>(021) 32277221
+                        </center>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-down">
+        <center>Copyright &copy; 2023 FLAVORS Inc. All Rights Reserved</center>
+    </div>
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $(".mobile-menu").click(function(){
+                $(".main-menu").slideToggle();
+            });
+            $(".dropdown").click(function(){
+                $(".dropdown-menu").slideToggle();
+            });
+        });
+
+        function review(){
+
+            document.getElementById('review').value="";
+            alert("Thanks for Your Feedback.");
+            
+        }
+
+        function product1(){
+            // sessionStorage.setItem("Product", "prod1");
+
+            var prod1name = document.getElementById('prod-1-name').innerHTML;
+            var prod1quantity = document.getElementById('prod-1-quantity').value;
+            var prod1price = document.getElementById('prod-1-price').innerHTML;
+
+
+            sessionStorage.setItem("prod-1-name", prod1name);
+            sessionStorage.setItem("prod-1-quantity", prod1quantity);
+            sessionStorage.setItem("prod-1-price", prod1price);
+
+            alert(prod1name + " Added to Cart.");
+
+        }
+
+        function product2(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod2name = document.getElementById('prod-2-name').innerHTML;
+            var prod2quantity = document.getElementById('prod-2-quantity').value;
+            var prod2price = document.getElementById('prod-2-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-2-name", prod2name);
+            sessionStorage.setItem("prod-2-quantity", prod2quantity);
+            sessionStorage.setItem("prod-2-price", prod2price);
+
+            alert(prod2name + " Added to Cart.");
+
+        }
+
+        function product3(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod3name = document.getElementById('prod-3-name').innerHTML;
+            var prod3quantity = document.getElementById('prod-3-quantity').value;
+            var prod3price = document.getElementById('prod-3-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-3-name", prod3name);
+            sessionStorage.setItem("prod-3-quantity", prod3quantity);
+            sessionStorage.setItem("prod-3-price", prod3price);
+
+            alert(prod3name + " Added to Cart.");
+
+        }
+
+        function product4(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod4name = document.getElementById('prod-4-name').innerHTML;
+            var prod4quantity = document.getElementById('prod-4-quantity').value;
+            var prod4price = document.getElementById('prod-4-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-4-name", prod4name);
+            sessionStorage.setItem("prod-4-quantity", prod4quantity);
+            sessionStorage.setItem("prod-4-price", prod4price);
+
+            alert(prod4name + " Added to Cart.");
+
+        }
+
+        function product5(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod5name = document.getElementById('prod-5-name').innerHTML;
+            var prod5quantity = document.getElementById('prod-5-quantity').value;
+            var prod5price = document.getElementById('prod-5-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-5-name", prod5name);
+            sessionStorage.setItem("prod-5-quantity", prod5quantity);
+            sessionStorage.setItem("prod-5-price", prod5price);
+
+            alert(prod5name + " Added to Cart.");
+
+        }
+
+        function product6(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod6name = document.getElementById('prod-6-name').innerHTML;
+            var prod6quantity = document.getElementById('prod-6-quantity').value;
+            var prod6price = document.getElementById('prod-6-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-6-name", prod6name);
+            sessionStorage.setItem("prod-6-quantity", prod6quantity);
+            sessionStorage.setItem("prod-6-price", prod6price);
+
+            alert(prod6name + " Added to Cart.");
+
+        }
+
+        function product7(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod7name = document.getElementById('prod-7-name').innerHTML;
+            var prod7quantity = document.getElementById('prod-7-quantity').value;
+            var prod7price = document.getElementById('prod-7-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-7-name", prod7name);
+            sessionStorage.setItem("prod-7-quantity", prod7quantity);
+            sessionStorage.setItem("prod-7-price", prod7price);
+
+            alert(prod7name + " Added to Cart.");
+
+        }
+
+        function product8(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod8name = document.getElementById('prod-8-name').innerHTML;
+            var prod8quantity = document.getElementById('prod-8-quantity').value;
+            var prod8price = document.getElementById('prod-8-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-8-name", prod8name);
+            sessionStorage.setItem("prod-8-quantity", prod8quantity);
+            sessionStorage.setItem("prod-8-price", prod8price);
+
+            alert(prod8name + " Added to Cart.");
+
+        }
+
+        function product9(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod9name = document.getElementById('prod-9-name').innerHTML;
+            var prod9quantity = document.getElementById('prod-9-quantity').value;
+            var prod9price = document.getElementById('prod-9-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-9-name", prod9name);
+            sessionStorage.setItem("prod-9-quantity", prod9quantity);
+            sessionStorage.setItem("prod-9-price", prod9price);
+
+            alert(prod9name + " Added to Cart.");
+
+        }
+        
+        function product10(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod10name = document.getElementById('prod-10-name').innerHTML;
+            var prod10quantity = document.getElementById('prod-10-quantity').value;
+            var prod10price = document.getElementById('prod-10-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-10-name", prod10name);
+            sessionStorage.setItem("prod-10-quantity", prod10quantity);
+            sessionStorage.setItem("prod-10-price", prod10price);
+
+            alert(prod10name + " Added to Cart.");
+
+        }
+
+        function product11(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod11name = document.getElementById('prod-11-name').innerHTML;
+            var prod11quantity = document.getElementById('prod-11-quantity').value;
+            var prod11price = document.getElementById('prod-11-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-11-name", prod11name);
+            sessionStorage.setItem("prod-11-quantity", prod11quantity);
+            sessionStorage.setItem("prod-11-price", prod11price);
+
+            alert(prod11name + " Added to Cart.");
+
+        }
+
+        function product12(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod12name = document.getElementById('prod-12-name').innerHTML;
+            var prod12quantity = document.getElementById('prod-12-quantity').value;
+            var prod12price = document.getElementById('prod-12-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-12-name", prod12name);
+            sessionStorage.setItem("prod-12-quantity", prod12quantity);
+            sessionStorage.setItem("prod-12-price", prod12price);
+
+            alert(prod12name + " Added to Cart.");
+
+        }
+
+        function product13(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod13name = document.getElementById('prod-13-name').innerHTML;
+            var prod13quantity = document.getElementById('prod-13-quantity').value;
+            var prod13price = document.getElementById('prod-13-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-13-name", prod13name);
+            sessionStorage.setItem("prod-13-quantity", prod13quantity);
+            sessionStorage.setItem("prod-13-price", prod13price);
+
+            alert(prod13name + " Added to Cart.");
+
+        }
+
+        function product14(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod14name = document.getElementById('prod-14-name').innerHTML;
+            var prod14quantity = document.getElementById('prod-14-quantity').value;
+            var prod14price = document.getElementById('prod-14-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-14-name", prod14name);
+            sessionStorage.setItem("prod-14-quantity", prod14quantity);
+            sessionStorage.setItem("prod-14-price", prod14price);
+
+            alert(prod14name + " Added to Cart.");
+
+        }
+
+        function product15(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod15name = document.getElementById('prod-15-name').innerHTML;
+            var prod15quantity = document.getElementById('prod-15-quantity').value;
+            var prod15price = document.getElementById('prod-15-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-15-name", prod15name);
+            sessionStorage.setItem("prod-15-quantity", prod15quantity);
+            sessionStorage.setItem("prod-15-price", prod15price);
+
+            alert(prod15name + " Added to Cart.");
+
+        }
+
+        function product16(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod16name = document.getElementById('prod-16-name').innerHTML;
+            var prod16quantity = document.getElementById('prod-16-quantity').value;
+            var prod16price = document.getElementById('prod-16-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-16-name", prod16name);
+            sessionStorage.setItem("prod-16-quantity", prod16quantity);
+            sessionStorage.setItem("prod-16-price", prod16price);
+
+            alert(prod16name + " Added to Cart.");
+
+        }
+
+        function product17(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod17name = document.getElementById('prod-17-name').innerHTML;
+            var prod17quantity = document.getElementById('prod-17-quantity').value;
+            var prod17price = document.getElementById('prod-17-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-17-name", prod17name);
+            sessionStorage.setItem("prod-17-quantity", prod17quantity);
+            sessionStorage.setItem("prod-17-price", prod17price);
+
+            alert(prod17name + " Added to Cart.");
+
+        }
+
+        function product18(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod18name = document.getElementById('prod-18-name').innerHTML;
+            var prod18quantity = document.getElementById('prod-18-quantity').value;
+            var prod18price = document.getElementById('prod-18-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-18-name", prod18name);
+            sessionStorage.setItem("prod-18-quantity", prod18quantity);
+            sessionStorage.setItem("prod-18-price", prod18price);
+
+            alert(prod18name + " Added to Cart.");
+
+        }
+
+        function product19(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod19name = document.getElementById('prod-19-name').innerHTML;
+            var prod19quantity = document.getElementById('prod-19-quantity').value;
+            var prod19price = document.getElementById('prod-19-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-19-name", prod19name);
+            sessionStorage.setItem("prod-19-quantity", prod19quantity);
+            sessionStorage.setItem("prod-19-price", prod19price);
+
+            alert(prod19name + " Added to Cart.");
+
+        }
+
+        function product20(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod20name = document.getElementById('prod-20-name').innerHTML;
+            var prod20quantity = document.getElementById('prod-20-quantity').value;
+            var prod20price = document.getElementById('prod-20-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-20-name", prod20name);
+            sessionStorage.setItem("prod-20-quantity", prod20quantity);
+            sessionStorage.setItem("prod-20-price", prod20price);
+
+            alert(prod20name + " Added to Cart.");
+
+        }
+
+        function product21(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod21name = document.getElementById('prod-21-name').innerHTML;
+            var prod21quantity = document.getElementById('prod-21-quantity').value;
+            var prod21price = document.getElementById('prod-21-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-21-name", prod21name);
+            sessionStorage.setItem("prod-21-quantity", prod21quantity);
+            sessionStorage.setItem("prod-21-price", prod21price);
+
+            alert(prod21name + " Added to Cart.");
+
+        }
+
+        function product22(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod22name = document.getElementById('prod-22-name').innerHTML;
+            var prod22quantity = document.getElementById('prod-22-quantity').value;
+            var prod22price = document.getElementById('prod-22-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-22-name", prod22name);
+            sessionStorage.setItem("prod-22-quantity", prod22quantity);
+            sessionStorage.setItem("prod-22-price", prod22price);
+
+            alert(prod22name + " Added to Cart.");
+
+        }
+
+        function product23(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod23name = document.getElementById('prod-23-name').innerHTML;
+            var prod23quantity = document.getElementById('prod-23-quantity').value;
+            var prod23price = document.getElementById('prod-23-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-23-name", prod23name);
+            sessionStorage.setItem("prod-23-quantity", prod23quantity);
+            sessionStorage.setItem("prod-23-price", prod23price);
+
+            alert(prod23name + " Added to Cart.");
+
+        }
+
+        function product24(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod24name = document.getElementById('prod-24-name').innerHTML;
+            var prod24quantity = document.getElementById('prod-24-quantity').value;
+            var prod24price = document.getElementById('prod-24-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-24-name", prod24name);
+            sessionStorage.setItem("prod-24-quantity", prod24quantity);
+            sessionStorage.setItem("prod-24-price", prod24price);
+
+            alert(prod24name + " Added to Cart.");
+
+        }
+
+        function product25(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod25name = document.getElementById('prod-25-name').innerHTML;
+            var prod25quantity = document.getElementById('prod-25-quantity').value;
+            var prod25price = document.getElementById('prod-25-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-25-name", prod25name);
+            sessionStorage.setItem("prod-25-quantity", prod25quantity);
+            sessionStorage.setItem("prod-25-price", prod25price);
+
+            alert(prod25name + " Added to Cart.");
+
+        }
+
+        function product26(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod26name = document.getElementById('prod-26-name').innerHTML;
+            var prod26quantity = document.getElementById('prod-26-quantity').value;
+            var prod26price = document.getElementById('prod-26-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-26-name", prod26name);
+            sessionStorage.setItem("prod-26-quantity", prod26quantity);
+            sessionStorage.setItem("prod-26-price", prod26price);
+
+            alert(prod26name + " Added to Cart.");
+
+        }
+
+        function product27(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod27name = document.getElementById('prod-27-name').innerHTML;
+            var prod27quantity = document.getElementById('prod-27-quantity').value;
+            var prod27price = document.getElementById('prod-27-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-27-name", prod27name);
+            sessionStorage.setItem("prod-27-quantity", prod27quantity);
+            sessionStorage.setItem("prod-27-price", prod27price);
+
+            alert(prod27name + " Added to Cart.");
+
+        }
+
+        function product28(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod28name = document.getElementById('prod-28-name').innerHTML;
+            var prod28quantity = document.getElementById('prod-28-quantity').value;
+            var prod28price = document.getElementById('prod-28-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-28-name", prod28name);
+            sessionStorage.setItem("prod-28-quantity", prod28quantity);
+            sessionStorage.setItem("prod-28-price", prod28price);
+
+            alert(prod28name + " Added to Cart.");
+
+        }
+
+        function product29(){
+            // sessionStorage.setItem("Product", "prod1");
+            var prod29name = document.getElementById('prod-29-name').innerHTML;
+            var prod29quantity = document.getElementById('prod-29-quantity').value;
+            var prod29price = document.getElementById('prod-29-price').innerHTML;
+
+            
+            sessionStorage.setItem("prod-29-name", prod29name);
+            sessionStorage.setItem("prod-29-quantity", prod29quantity);
+            sessionStorage.setItem("prod-29-price", prod29price);
+
+            alert(prod29name + " Added to Cart.");
+
+        }
+    </script>
+
+
+</body>
+</html>
